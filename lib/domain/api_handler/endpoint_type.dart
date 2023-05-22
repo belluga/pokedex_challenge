@@ -1,0 +1,1 @@
+enum EndpointType { post, get, patch, delete, update }
