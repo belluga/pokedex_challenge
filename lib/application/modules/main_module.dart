@@ -1,7 +1,6 @@
 import 'package:pokedex_challenge/domain/controllers_ccntracts/pokemon_list_page_controller_contract.dart';
 import 'package:pokedex_challenge/domain/controllers_ccntracts/pokemon_single_page_controller.dart';
 import 'package:pokedex_challenge/domain/navigation_arguments/pokemon_single_page_arguments.dart';
-import 'package:pokedex_challenge/presentation/init_screen/init_screen.dart';
 import 'package:moduler_route/moduler_route.dart';
 import 'package:pokedex_challenge/presentation/main/controllers/pokemon_list_page_controller.dart';
 import 'package:pokedex_challenge/presentation/main/controllers/pokemon_single_page_controller.dart';
@@ -23,7 +22,7 @@ class MainModule extends Module {
         ),
         ModuleRoute(
           path: routePaths.single,
-          builder: (_) => PokemonSinglePage(),
+          builder: (_) => const PokemonSinglePage(),
           transitionType: RouteTransitionType.rightToLeftWithFade,
         ),
       ];

@@ -17,7 +17,7 @@ class PokemonListPage extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.primary,
       appBar: AppBar(
         title: Row(
-          children: [
+          children: const [
             CircleAvatar(),
             Text("Pokédex"),
           ],
@@ -26,7 +26,7 @@ class PokemonListPage extends StatelessWidget {
       body: Column(
         children: [
           Row(
-            children: [Expanded(child: Container()), CircleAvatar()],
+            children: [Expanded(child: Container()), const CircleAvatar()],
           ),
           Expanded(
             child: StreamValueBuilder<List<PokemonSummary>>(
